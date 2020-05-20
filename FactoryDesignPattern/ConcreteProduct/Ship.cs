@@ -3,7 +3,7 @@ using FactoryDesignPattern.Product;
 
 namespace FactoryDesignPattern.ConcreteProduct
 {
-    public class Ship:Vehical
+    public class Ship:IVehical
     {
         public int getSerialNumber()
         {
@@ -17,5 +17,9 @@ namespace FactoryDesignPattern.ConcreteProduct
 
         }
 
+        public string getName()
+        {
+            return "Ship";
+        }
     }
 }

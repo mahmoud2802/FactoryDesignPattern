@@ -3,8 +3,9 @@
     /// <summary>
     /// محصول ما
     /// </summary>
-    public interface Vehical
+    public interface IVehical
     {
+
         /// <summary>
         /// گرفتن شماره وسلیه
         /// </summary>
@@ -14,6 +15,8 @@
         /// بارگیری وسیله نقلیه
         /// </summary>
         void loading();
+
+        string getName();
 
         ///////میتوانید گزینه ها دیگر را نیز اضافه کنید
     }

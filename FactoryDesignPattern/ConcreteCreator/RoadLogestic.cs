@@ -4,11 +4,11 @@ using FactoryDesignPattern.Product;
 
 namespace FactoryDesignPattern.ConcreteCreator
 {
-    public class SeaLogestic : Transport
+    public class RoadLogestic : Transport
     {
         protected override IVehical createVehical()
         {
-            return new Ship();
+            return new Trunk();
         }
     }
 }

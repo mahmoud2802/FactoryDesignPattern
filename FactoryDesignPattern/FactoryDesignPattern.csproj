@@ -39,12 +39,12 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="ConcreteCreator\AirLogestic.cs" />
-        <Compile Include="ConcreteCreator\GroundLogestic.cs" />
+        <Compile Include="ConcreteCreator\RoadLogestic.cs" />
         <Compile Include="ConcreteCreator\SeaLogestic.cs" />
         <Compile Include="ConcreteProduct\AirPlane.cs" />
         <Compile Include="ConcreteProduct\Ship.cs" />
         <Compile Include="ConcreteProduct\Trunk.cs" />
-        <Compile Include="Creator\Logestic.cs" />
+        <Compile Include="Creator\Transport.cs" />
         <Compile Include="Product\Vehical.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />

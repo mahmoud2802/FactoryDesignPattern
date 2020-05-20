@@ -1,6 +1,7 @@
 ﻿using System;
 using DesignPattern.ConcreteCreator;
-using DesignPattern.Creator;
+using FactoryDesignPattern.ConcreteCreator;
+using FactoryDesignPattern.Creator;
 
 namespace DesignPattern
 {
@@ -13,15 +14,15 @@ namespace DesignPattern
             //این مثال مربوط به پست دیزانپتر ها در ایستاگرام @mahmoud2802 می باشد
             //************************************************************
 
-            Logestic _logestic1 = new AirLogestic();
-            _logestic1.orderVehical();
+            Transport _deliver1 = new AirLogestic();
+            _deliver1.Deliver();
             Console.WriteLine("/////////////////////////////////////");
-            Logestic _logestic2 = new GroundLogestic();
-            _logestic2.orderVehical();
+            Transport _deliver2 = new RoadLogestic();
+            _deliver2.Deliver();
             Console.WriteLine("/////////////////////////////////////");
 
-            Logestic _logestic3 = new SeaLogestic();
-            _logestic3.orderVehical();
+            Transport _deliver3 = new SeaLogestic();
+            _deliver3.Deliver();
             Console.WriteLine("/////////////////////////////////////");
             printInstagram();
         }

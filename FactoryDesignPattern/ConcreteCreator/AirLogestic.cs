@@ -1,13 +1,13 @@
-﻿using DesignPattern.Creator;
-using FactoryDesignPattern.ConcreteProduct;
+﻿using FactoryDesignPattern.ConcreteProduct;
+using FactoryDesignPattern.Creator;
 using FactoryDesignPattern.Product;
 
 namespace DesignPattern.ConcreteCreator
 {
-    public class AirLogestic : Logestic
+    public class AirLogestic : Transport
     {
 
-        protected override Vehical createVehical()
+        protected override IVehical createVehical()
         {
             return new AirPlane();
         }

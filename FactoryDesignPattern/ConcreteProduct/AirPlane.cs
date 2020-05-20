@@ -3,7 +3,7 @@ using FactoryDesignPattern.Product;
 
 namespace FactoryDesignPattern.ConcreteProduct
 {
-    public class AirPlane:Vehical
+    public class AirPlane:IVehical
     {
         public int getSerialNumber()
         {
@@ -15,6 +15,11 @@ namespace FactoryDesignPattern.ConcreteProduct
         {
             Console.WriteLine(" Loading in Airplane ");
 
+        }
+
+        public string getName()
+        {
+            return "AirPlane";
         }
     }
 }

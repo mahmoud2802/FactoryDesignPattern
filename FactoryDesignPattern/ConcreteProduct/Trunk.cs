@@ -3,7 +3,7 @@ using FactoryDesignPattern.Product;
 
 namespace FactoryDesignPattern.ConcreteProduct
 {
-    public class Trunk:Vehical
+    public class Trunk:IVehical
     {
         public int getSerialNumber()
         {
@@ -15,6 +15,11 @@ namespace FactoryDesignPattern.ConcreteProduct
         {
             Console.WriteLine(" loading in Trunk ");
 
+        }
+
+        public string getName()
+        {
+            return "Trunk";
         }
     }
 }
